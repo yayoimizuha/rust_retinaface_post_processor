@@ -1,0 +1,18 @@
+[package]
+name = "rust_retinaface_post_processor"
+version = "0.2.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust_retinaface_post_processor"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.22.0"
+anyhow = "*"
+itertools = "*"
+serde = { version = "*", features = ["default", "derive"] }
+powerboxesrs = { version = "*" }
+ndarray = { version = "*", features = ["blas", "default"] }
+cached = { version = "*" }
